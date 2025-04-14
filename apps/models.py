@@ -65,7 +65,7 @@ class Banner(models.Model):
 
 class Blog(models.Model):
     name = models.CharField(max_length=255)
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=100)
     day = models.DateField()
     image = models.ImageField(upload_to='blog/')
     
